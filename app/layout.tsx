@@ -16,11 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <link rel="icon" href="/favicon.svg" sizes="any" />
-      <body className={inter.className}>
+      <body className={`${inter.className} overflow-x-hidden`}>
         <Navbar />
-        {children}
+        <div className="pt-16 sm:pt-20">
+          {children}
+        </div>
       </body>
     </html>
   );

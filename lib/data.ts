@@ -50,9 +50,9 @@ export const experiencesData = [
 
 export const worksData = [
   {
-    title: "Vyver group",
+    title: "Vyver Group",
     description:
-      "It is the branding and marketing website for a company that sells products for the home and garden.",
+      "Modern branding and marketing website for a home & garden company. Built with performance and SEO optimization in mind, featuring smooth animations and responsive design.",
     tags: [
       "Next.js",
       "TypeScript",
@@ -61,13 +61,15 @@ export const worksData = [
       "Figma",
     ],
     imageUrl: "/images/vyver-group.gif",
+    liveUrl: "https://vdv-retail.vercel.app",
+    githubUrl: undefined,
   },
   {
-    title: "Oblinor AS",
+    title: "Oblinor Platform",
     description:
-      "Crowdlending platform for real estate. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Comprehensive crowdlending platform for real estate investments. Features advanced filtering, real-time data updates, secure payment processing, and intuitive dashboard for investors.",
     tags: [
-      "Vue js",
+      "Vue.js",
       "TypeScript",
       "WordPress",
       "JavaScript",
@@ -77,27 +79,33 @@ export const worksData = [
       "Figma",
     ],
     imageUrl: "/images/oblinor.gif",
+    liveUrl: "https://oblinor.no",
+    githubUrl: undefined,
   },
   {
     title: "BB Utvikling",
     description:
-      "It is property sale company.",
-    tags: ["Vue js", "SCSS", "HTML", "Figma"],
+      "Elegant property development company website showcasing real estate projects. Features interactive property galleries, location maps, and inquiry forms.",
+    tags: ["Vue.js", "SCSS", "HTML", "Figma"],
     imageUrl: "/images/bbutvikling.gif",
+    liveUrl: "https://bbutvikling.no",
+    githubUrl: undefined,
   },
   {
-    title: "Oblinor backoffice dashboard",
+    title: "Admin Dashboard",
     description:
-      "Oblinor backoffice dashboard for managing the platform. I was the front-end developer.",
-    tags: ["Vue js", "TypeScript", "Vuetify", "SCSS", "Figma"],
+      "Sophisticated backoffice dashboard for platform management. Includes real-time analytics, user management, transaction monitoring, and comprehensive reporting tools.",
+    tags: ["Vue.js", "TypeScript", "Vuetify", "SCSS", "Figma"],
     imageUrl: "/images/figma-sketch.gif",
+    liveUrl: undefined,
+    githubUrl: undefined,
   },
   {
-    title: "Oblinor AS",
+    title: "Customer Portal",
     description:
-      "Oblinor customer dashboard for managing the platform. I was the front-end developer.",
+      "User-friendly customer dashboard with investment tracking, document management, transaction history, and personalized analytics. Built with security and UX as top priorities.",
     tags: [
-      "Vue js",
+      "Vue.js",
       "TypeScript",
       "Vuetify",
       "Vuex",
@@ -107,6 +115,8 @@ export const worksData = [
       "Figma",
     ],
     imageUrl: "/images/oblinor-mypage.gif",
+    liveUrl: undefined,
+    githubUrl: undefined,
   },
 ] as const;
 

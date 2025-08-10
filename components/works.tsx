@@ -24,53 +24,54 @@ export default function Works() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        {/* Header Section */}
-        <div className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="p-3 bg-[#FFA324]/10 rounded-2xl">
-              <MdWorkHistory className="text-[#FFA324]" size={32} />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
-              My Work
-            </h1>
+        {/* Header Section - Centered like other pages */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center justify-center p-3 bg-[#FFA324]/10 rounded-2xl mb-6">
+            <MdWorkHistory className="text-[#FFA324]" size={32} />
           </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            My Work
+          </h1>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Showcasing projects that blend creativity with functionality
+          </p>
+        </div>
 
-          {/* Enhanced Description */}
-          <div className="space-y-4 max-w-4xl">
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Welcome to my portfolio showcase! Here you&apos;ll discover a collection of my 
-              <span className="text-[#FFA324] font-semibold"> frontend</span>, 
-              <span className="text-[#FFA324] font-semibold"> backend</span>, and 
-              <span className="text-[#FFA324] font-semibold"> UI/UX design</span> projects.
-            </p>
-            <p className="text-base text-gray-400 leading-relaxed">
-              Each project represents my commitment to creating beautiful, performant, and 
-              user-centric digital experiences. From responsive web applications to complex 
-              dashboards, I focus on writing clean, maintainable code while delivering 
-              exceptional user interfaces.
-            </p>
+        {/* Enhanced Description */}
+        <div className="space-y-4 max-w-4xl mx-auto mb-12 text-center">
+          <p className="text-lg text-gray-300 leading-relaxed">
+            Welcome to my portfolio showcase! Here you&apos;ll discover a collection of my 
+            <span className="text-[#FFA324] font-semibold"> frontend</span>, 
+            <span className="text-[#FFA324] font-semibold"> backend</span>, and 
+            <span className="text-[#FFA324] font-semibold"> UI/UX design</span> projects.
+          </p>
+          <p className="text-base text-gray-400 leading-relaxed">
+            Each project represents my commitment to creating beautiful, performant, and 
+            user-centric digital experiences. From responsive web applications to complex 
+            dashboards, I focus on writing clean, maintainable code while delivering 
+            exceptional user interfaces.
+          </p>
+        </div>
+
+        {/* Stats or highlights - Centered */}
+        <div className="flex flex-wrap justify-center gap-8 mb-16">
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-[#FFA324] rounded-full animate-pulse" />
+            <span className="text-gray-300">
+              <span className="font-bold text-white">{worksData.length}+</span> Projects Completed
+            </span>
           </div>
-
-          {/* Stats or highlights */}
-          <div className="flex flex-wrap gap-8 mt-8">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-[#FFA324] rounded-full animate-pulse" />
-              <span className="text-gray-300">
-                <span className="font-bold text-white">{worksData.length}+</span> Projects Completed
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-              <span className="text-gray-300">
-                <span className="font-bold text-white">5+</span> Technologies Used
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" />
-              <span className="text-gray-300">
-                <span className="font-bold text-white">100%</span> Responsive Design
-              </span>
-            </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+            <span className="text-gray-300">
+              <span className="font-bold text-white">5+</span> Technologies Used
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" />
+            <span className="text-gray-300">
+              <span className="font-bold text-white">100%</span> Responsive Design
+            </span>
           </div>
         </div>
 

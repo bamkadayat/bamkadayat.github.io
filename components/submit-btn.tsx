@@ -1,16 +1,25 @@
 import React from "react";
+import { IoSend } from "react-icons/io5";
 
 export default function SubmitBtn({ pending }: { pending: boolean }) {
   return (
     <button
       type="submit"
-      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] border border-[#FFA324] text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+      className="group relative w-full flex items-center justify-center gap-3 px-6 py-4 bg-[#FFA324] text-white font-semibold rounded-xl 
+               transition-all duration-300 hover:bg-[#ff8c00] hover:scale-[1.02] hover:shadow-lg hover:shadow-[#FFA324]/25 
+               disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100"
       disabled={pending}
     >
       {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
+        <>
+          <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+          <span>Sending...</span>
+        </>
       ) : (
-        <>Submit </>
+        <>
+          <span>Send Message</span>
+          <IoSend className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" size={18} />
+        </>
       )}
     </button>
   );

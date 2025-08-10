@@ -1,0 +1,124 @@
+$primary-color: #16222e;
+$link-color: #ffffff;
+$breakpoint: 768px;
+.header-wrap {
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(22, 34, 46, 0.5);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(22, 34, 46, 0.5);
+  box-shadow: 0px 2px 2px 0px rgba(5, 18, 31, 0.5);
+  line-height: 2rem;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $primary-color;
+
+    &__item {
+      a {
+        color: #fff; // White text color
+        text-decoration: none;
+        text-transform: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -8px;
+          width: 0;
+          height: 2px;
+          background: #ffa324; // Orange underline on hover
+          transition: width 0.5s;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+      }
+      .active {
+        color: white;
+        text-decoration: none;
+        text-transform: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -8px;
+          width: 100%;
+          height: 2px;
+          background: #ffa324; // Orange underline on hover
+          transition: width 0.2s;
+        }
+      }
+    }
+
+    &__brand {
+      text-transform: uppercase;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 3rem;
+
+      @media (max-width: $breakpoint) {
+        position: fixed;
+        top: 52px;
+        right: 0;
+        height: auto;
+        width: 50vw;
+        background: $primary-color;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+        z-index: 55;
+        li {
+          padding: 2rem 0;
+        }
+      }
+    }
+
+    &__toggler {
+      display: none;
+      div {
+        width: 30px;
+        height: 2.2px;
+        margin: 5px;
+        background: $link-color;
+        transition: 0.2s ease-in;
+      }
+
+      @media (max-width: $breakpoint) {
+        display: block;
+        cursor: pointer;
+        z-index: 50;
+      }
+
+      &.toggle {
+        .line1 {
+          transform: rotate(-45deg) translate(-4px, 5px);
+        }
+
+        .line2 {
+          opacity: 0;
+        }
+
+        .line3 {
+          transform: rotate(45deg) translate(-4px, -5px);
+        }
+      }
+    }
+
+    &__active {
+      transform: translateX(0%);
+    }
+  }
+}

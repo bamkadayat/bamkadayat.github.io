@@ -3,12 +3,12 @@
 import React, { useState, useRef } from "react";
 
 import { motion } from "framer-motion";
-import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import { MdContactMail } from "react-icons/md";
 
 export default function Contact() {
   const [message, setMessage] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
   
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
@@ -37,19 +37,34 @@ export default function Contact() {
 
       <form
         className="mt-5 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            setMessage(error);
-          } else {
-            setMessage("Email sent successfully!");
+        onSubmit={async (e) => {
+          e.preventDefault();
+          setPending(true);
+          const formData = new FormData(e.currentTarget);
+          
+          try {
+            const response = await fetch('/api/send-email', {
+              method: 'POST',
+              body: formData,
+            });
             
-            // Clear the input fields after successful submission
-            if (emailRef.current && messageRef.current) {
-              emailRef.current.value = "";
-              messageRef.current.value = "";
+            const result = await response.json();
+            
+            if (!response.ok) {
+              setMessage(result.error);
+            } else {
+              setMessage("Email sent successfully!");
+              
+              // Clear the input fields after successful submission
+              if (emailRef.current && messageRef.current) {
+                emailRef.current.value = "";
+                messageRef.current.value = "";
+              }
             }
+          } catch (error) {
+            setMessage("Failed to send email. Please try again.");
+          } finally {
+            setPending(false);
           }
         }}
       >
@@ -70,7 +85,7 @@ export default function Contact() {
           maxLength={1000}
           ref={messageRef} 
         />
-        <SubmitBtn />
+        <SubmitBtn pending={pending} />
       </form>
       <p>
         {message && (

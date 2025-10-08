@@ -1,3 +1,21 @@
+// Personal Info
+export const personalInfo = {
+  name: "Bam Kadayat",
+  title: "Frontend Developer & UI/UX Designer",
+  tagline: "I build clean, accessible, modern websites people love to use.",
+  currentCompany: {
+    name: "Oblinor",
+    url: "https://oblinor.no",
+  },
+} as const;
+
+// Social Links
+export const socialLinks = {
+  github: "https://github.com/bamkadayat",
+  linkedin: "https://www.linkedin.com/in/bam-kadayat",
+} as const;
+
+// Navigation
 export const NavList = [
   {
     name: "About",
@@ -15,6 +33,25 @@ export const NavList = [
     id: "work",
   },
 ] as const;
+
+// About Section
+export const aboutData = {
+  paragraphs: [
+    "I'm a frontend developer and UI/UX designer who loves building digital experiences that feel as good as they look. I care about the little details and write clean, maintainable code, turning ideas into fast, friendly web apps.",
+    "Good design isn't just appearance—it's how something works and feels. Every project is a chance to solve real problems and make someone's day a bit easier.",
+    "When I'm not coding, I'm cycling, playing football, hanging out with my wife and two kids, or running the trails between Haraløkka and Østmarksetra.",
+  ],
+  technologies: [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React & Next.js",
+    "Vue.js & Vuetify",
+    "Tailwind CSS",
+    "Node.js & Express",
+    "PostgreSQL & MySQL",
+    "Git & GitHub",
+  ],
+} as const;
 
 export const experiencesData = [
   {

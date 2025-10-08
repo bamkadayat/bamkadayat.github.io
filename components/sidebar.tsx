@@ -1,4 +1,4 @@
-import { NavList } from "@/lib/data";
+import { NavList, personalInfo, socialLinks } from "@/lib/data";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 interface SidebarProps {
@@ -11,13 +11,13 @@ export default function Sidebar({ activeSection, handleNavClick }: SidebarProps)
     <aside className="hidden lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-0 lg:h-screen lg:w-[40%] lg:py-24 lg:px-12 xl:px-16">
       <div>
         <h1 className="text-5xl font-bold text-white mb-3">
-          Bam Kadayat
+          {personalInfo.name}
         </h1>
         <h2 className="text-xl font-medium text-white mb-4">
-          Frontend Developer & UI/UX Designer
+          {personalInfo.title}
         </h2>
         <p className="text-gray-400 max-w-sm mb-16">
-          I build clean, accessible, modern websites people love to use.
+          {personalInfo.tagline}
         </p>
 
         {/* Navigation */}
@@ -56,7 +56,7 @@ export default function Sidebar({ activeSection, handleNavClick }: SidebarProps)
       {/* Social Links */}
       <div className="flex items-center gap-5 mt-8">
         <a
-          href="https://github.com/bamkadayat"
+          href={socialLinks.github}
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-colors"
@@ -65,7 +65,7 @@ export default function Sidebar({ activeSection, handleNavClick }: SidebarProps)
           <BsGithub size={24} />
         </a>
         <a
-          href="https://www.linkedin.com/in/bam-kadayat"
+          href={socialLinks.linkedin}
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-colors"

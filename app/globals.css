@@ -2,62 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #16222e;
-  color: #ffffff;
+* {
+  scroll-behavior: smooth;
 }
+
+body {
+  background-color: #0a192f;
+  color: #e6f1ff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
   padding: 1rem;
 }
-.page-margin {
-  margin-top: 150px;
-}
-@media (max-width: 768px) {
-  .page-margin {
-    margin-top: 130px;
-  }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+  background: #0a192f;
 }
 
-@layer utilities {
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
+::-webkit-scrollbar-thumb {
+  background: #FFA324;
+  border-radius: 5px;
 }
 
-.rotate-icon {
-  animation: spin 10s linear infinite;
-}
-.image-height {
-  height: 300px;
-  overflow: hidden;
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8c00;
 }
 
-@media (min-width: 1024px) {
-  .image-mobile {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 1024px) {
-  .image-mobile {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .image-mobile img {
-    width: 100vw;
-  }
+/* Selection */
+::selection {
+  background-color: #FFA324;
+  color: #0a192f;
 }

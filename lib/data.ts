@@ -1,50 +1,35 @@
 export const NavList = [
   {
-    name: "Home",
-    link: "/",
-    id: "home",
+    name: "About",
+    link: "#about",
+    id: "about",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
+    id: "experience",
   },
   {
     name: "Work",
-    link: "/work",
-    id: "",
-  },
-  {
-    name: "About",
-    link: "/about",
-    id: "",
-  },
-  {
-    name: "Contact",
-    link: "/contact",
-    id: "",
+    link: "#work",
+    id: "work",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Full-Stack",
-    location: "Miami, FL",
+    title: "Frontend Developer",
+    location: "Oblinor AS, Oslo, Norway",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-
-    date: "2019",
+      "Developing and maintaining web and mobile applications using React (Next.js) and Vue.js. Focused on building responsive user interfaces, integrating REST APIs, optimizing performance, and collaborating with backend teams to deliver user-friendly solutions.",
+    date: "August 2020 - Present",
   },
   {
-    title: "Front-End",
-    location: "Orlando, FL",
+    title: "Web Developer",
+    location: "Responsive Pixel Pvt. Ltd., Kathmandu, Nepal",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-
-    date: "2019 - 2021",
-  },
-  {
-    title: "UI/UX",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-
-    date: "2021 - present",
+      "Designed, coded, and maintained websites with strong functionality and appealing design. Ensured cross-device compatibility and accessibility for all users.",
+    date: "July 2014 - July 2016",
   },
 ] as const;
 
@@ -52,7 +37,7 @@ export const worksData = [
   {
     title: "Vyver Group",
     description:
-      "Modern branding and marketing website for a home & garden company. Built with performance and SEO optimization in mind, featuring smooth animations and responsive design.",
+      "Marketing website for a home & garden company.",
     tags: [
       "Next.js",
       "TypeScript",
@@ -67,7 +52,7 @@ export const worksData = [
   {
     title: "Oblinor Platform",
     description:
-      "Comprehensive crowdlending platform for real estate investments. Features advanced filtering, real-time data updates, secure payment processing, and intuitive dashboard for investors.",
+      "Crowdlending platform for real estate investments.",
     tags: [
       "Vue.js",
       "TypeScript",
@@ -85,7 +70,7 @@ export const worksData = [
   {
     title: "BB Utvikling",
     description:
-      "Elegant property development company website showcasing real estate projects. Features interactive property galleries, location maps, and inquiry forms.",
+      "Property development company website.",
     tags: ["Vue.js", "SCSS", "HTML", "Figma"],
     imageUrl: "/images/bbutvikling.gif",
     liveUrl: "https://bbutvikling.no",
@@ -94,7 +79,7 @@ export const worksData = [
   {
     title: "Admin Dashboard",
     description:
-      "Sophisticated backoffice dashboard for platform management. Includes real-time analytics, user management, transaction monitoring, and comprehensive reporting tools.",
+      "Dashboard for platform management and analytics.",
     tags: ["Vue.js", "TypeScript", "Vuetify", "SCSS", "Figma"],
     imageUrl: "/images/figma-sketch.gif",
     liveUrl: undefined,
@@ -103,7 +88,7 @@ export const worksData = [
   {
     title: "Customer Portal",
     description:
-      "User-friendly customer dashboard with investment tracking, document management, transaction history, and personalized analytics. Built with security and UX as top priorities.",
+      "Investment tracking and document management portal.",
     tags: [
       "Vue.js",
       "TypeScript",
@@ -118,24 +103,4 @@ export const worksData = [
     liveUrl: undefined,
     githubUrl: undefined,
   },
-] as const;
-
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "Vuejs",
-  "Vuetify",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "Redux",
-  "Express",
-  "PostgreSQL",
-  "Framer Motion",
-  "wordPress",
 ] as const;

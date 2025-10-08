@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,13 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className="scroll-smooth">
       <link rel="icon" href="/favicon.svg" sizes="any" />
-      <body className={`${inter.className} overflow-x-hidden`}>
-        <Navbar />
-        <div className="pt-16 sm:pt-20">
-          {children}
-        </div>
+      <body className={`${inter.className}`}>
+        {children}
       </body>
     </html>
   );

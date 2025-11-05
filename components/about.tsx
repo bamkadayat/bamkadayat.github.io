@@ -3,7 +3,7 @@ import { aboutData, personalInfo } from "@/lib/data";
 export default function About() {
   return (
     <div>
-      <div className="space-y-4 text-gray-400 leading-relaxed">
+      <div className="space-y-4 text-gray-300 leading-7">
         <p>{aboutData.paragraphs[0]}</p>
 
         <p>

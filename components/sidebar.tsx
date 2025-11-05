@@ -8,7 +8,7 @@ interface SidebarProps {
 
 export default function Sidebar({ activeSection, handleNavClick }: SidebarProps) {
   return (
-    <aside className="hidden lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-0 lg:h-screen lg:w-[40%] lg:py-24 lg:px-12 xl:px-16">
+    <aside className="hidden lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-0 lg:h-screen lg:w-[30%] lg:py-24 lg:px-12 xl:px-8">
       <div>
         <h1 className="text-5xl font-bold text-white mb-3">
           {personalInfo.name}

@@ -9,10 +9,14 @@ import MobileHeader from "@/components/mobile-header";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
+  const [showTopBlur, setShowTopBlur] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 150; // Offset for better detection
+
+      // Show blur effect when scrolled down
+      setShowTopBlur(window.scrollY > 50);
 
       // Get all section elements
       const aboutSection = document.getElementById("about");
@@ -54,12 +58,17 @@ export default function Home() {
   };
 
   return (
-    <div className="flex min-h-screen max-w-screen-xl mx-auto">
+    <div className="flex min-h-screen max-w-screen-lg mx-auto">
       {/* Left Sidebar - Fixed */}
       <Sidebar activeSection={activeSection} handleNavClick={handleNavClick} />
 
       {/* Right Content - Scrollable */}
-      <main className="w-full lg:ml-auto lg:w-[60%] lg:py-24 px-6 sm:px-12 xl:px-16">
+      <main className="w-full lg:ml-auto lg:w-[70%] lg:py-24 px-6 sm:px-12 xl:px-8 relative">
+        {/* Top Blur Overlay */}
+        {showTopBlur && (
+          <div className="fixed top-0 left-0 right-0 h-24 bg-gradient-to-b from-slate-900 via-slate-900/80 to-transparent backdrop-blur-sm z-10 pointer-events-none lg:left-[30%]" />
+        )}
+
         {/* Mobile Header */}
         <MobileHeader />
 

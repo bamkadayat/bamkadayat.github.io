@@ -1,31 +1,41 @@
-import { NavList, personalInfo, socialLinks } from "@/lib/data";
+import Link from "next/link";
+import { socialLinks } from "@/lib/data";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import LanguageSwitcher from "./language-switcher";
 
 interface SidebarProps {
   activeSection: string;
   handleNavClick: (e: React.MouseEvent<HTMLAnchorElement>, link: string) => void;
+  dict: any;
+  lang: string;
 }
 
-export default function Sidebar({ activeSection, handleNavClick }: SidebarProps) {
+export default function Sidebar({ activeSection, handleNavClick, dict, lang }: SidebarProps) {
+  const navItems = [
+    { name: dict.nav.about, link: "#about", id: "about" },
+    { name: dict.nav.experience, link: "#experience", id: "experience" },
+    { name: dict.nav.work, link: "#work", id: "work" },
+  ];
+
   return (
     <aside className="hidden lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-0 lg:h-screen lg:w-[30%] lg:py-24 lg:px-12 xl:px-8">
       <div>
         <h1 className="text-5xl font-bold text-white mb-3">
-          {personalInfo.name}
+          {dict.personal.name}
         </h1>
         <h2 className="text-xl font-medium text-white mb-4">
-          {personalInfo.title}
+          {dict.personal.title}
         </h2>
         <p className="text-gray-400 max-w-sm mb-16">
-          {personalInfo.tagline}
+          {dict.personal.tagline}
         </p>
 
         {/* Navigation */}
         <nav className="hidden lg:block">
           <ul className="space-y-4">
-            {NavList.map((item) => (
+            {navItems.map((item) => (
               <li key={item.id}>
-                <a
+                <Link
                   href={item.link}
                   onClick={(e) => handleNavClick(e, item.link)}
                   className="group flex items-center gap-4 py-2"
@@ -38,23 +48,23 @@ export default function Sidebar({ activeSection, handleNavClick }: SidebarProps)
                     }`}
                   ></span>
                   <span
-                    className={`text-xs font-bold uppercase tracking-widest transition-colors duration-300 ${
+                    className={` text-md font-semibold uppercase tracking-widest transition-colors duration-300 ${
                       activeSection === item.id
                         ? "text-white"
                         : "text-gray-500 group-hover:text-white"
                     }`}
                   >
-                    {item.name}
+                    {item.name} 
                   </span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
       </div>
 
-      {/* Social Links */}
-      <div className="flex items-center gap-5 mt-8">
+      {/* Social Links & Language Switcher */}
+      <div className="flex items-center gap-5">
         <a
           href={socialLinks.github}
           target="_blank"
@@ -73,6 +83,7 @@ export default function Sidebar({ activeSection, handleNavClick }: SidebarProps)
         >
           <BsLinkedin size={24} />
         </a>
+        <LanguageSwitcher currentLang={lang} />
       </div>
     </aside>
   );

@@ -1,0 +1,70 @@
+{
+  "personal": {
+    "name": "Bam Kadayat",
+    "title": "Frontend-utvikler & UI/UX-designer",
+    "tagline": "Jeg lager moderne og brukervennlige nettsider som folk liker å bruke."
+  },
+  "nav": {
+    "about": "Om meg",
+    "experience": "Erfaring",
+    "work": "Arbeid"
+  },
+  "about": {
+    "intro": "Jeg er en frontend-utvikler og UI/UX-designer som elsker å bygge digitale opplevelser som føles like gode som de ser ut. Jeg bryr meg om de små detaljene og skriver ren, vedlikeholdbar kode som gjør ideer om til raske og brukervennlige webapper.",
+    "currentWork": "For tiden jobber jeg som fullstack-utvikler i Oblinor, hvor jeg leder frontend-utviklingen og bidrar til å bygge skalerbare webløsninger med TypeScript, React, Next.js og Vue.js.",
+    "design": "God design handler ikke bare om utseende det handler om hvordan noe fungerer og føles. Hvert prosjekt er en mulighet til å løse ekte problemer og gjøre hverdagen litt enklere for noen.",
+    "personal": "Når jeg ikke koder, sykler jeg, spiller fotball, tilbringer tid med kona og mine to barn, eller løper på stiene mellom Haraløkka og Østmarksetra.",
+    "techTitle": "Teknologier jeg jobber med:",
+    "technologies": [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React & Next.js",
+      "Vue.js & Vuetify",
+      "Tailwind CSS",
+      "Node.js & Express",
+      "PostgreSQL & MySQL",
+      "Git & GitHub"
+    ]
+  },
+  "experience": {
+    "items": [
+      {
+        "title": "Frontend-utvikler",
+        "location": "Oblinor AS, Oslo, Norge",
+        "description": "Utvikler og vedlikeholder web- og mobilapplikasjoner ved hjelp av React (Next.js) og Vue.js. Fokusert på å bygge responsive brukergrensesnitt, integrere REST API-er, optimalisere ytelse og samarbeide med backend-team for å levere brukervennlige løsninger.",
+        "date": "August 2020 - Nå"
+      },
+      {
+        "title": "Webutvikler",
+        "location": "Responsive Pixel Pvt. Ltd., Kathmandu, Nepal",
+        "description": "Designet, kodet og vedlikeholdt nettsteder med sterk funksjonalitet og tiltalende design. Sikret kompatibilitet på tvers av enheter og tilgjengelighet for alle brukere.",
+        "date": "Juli 2014 - Juli 2016"
+      }
+    ]
+  },
+  "work": {
+    "items": [
+      {
+        "title": "Vyver Group",
+        "description": "Markedsføringsnettsted for et hage- og hjemmeselskap."
+      },
+      {
+        "title": "Oblinor Platform",
+        "description": "Crowdlending-plattform for eiendomsinvesteringer."
+      },
+      {
+        "title": "BB Utvikling",
+        "description": "Nettsted for eiendomsutviklingsselskap."
+      },
+      {
+        "title": "Admin Dashboard",
+        "description": "Dashboard for plattformadministrasjon og analyser."
+      },
+      {
+        "title": "Customer Portal",
+        "description": "Portal for investeringssporing og dokumenthåndtering."
+      }
+    ]
+  },
+  "footer": ""
+}

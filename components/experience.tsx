@@ -1,10 +1,8 @@
-import { experiencesData } from "@/lib/data";
-
-export default function Experience() {
+export default function Experience({ dict }: { dict: any }) {
   return (
     <div>
       <div className="space-y-12">
-        {experiencesData.map((item, index) => (
+        {dict.experience.items.map((item: any, index: number) => (
           <div key={index} className="relative pl-8 border-l-2 border-gray-700">
             <div className="absolute -left-[9px] top-0 w-4 h-4 bg-[#FFA324] rounded-full"></div>
 

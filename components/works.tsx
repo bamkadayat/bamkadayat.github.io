@@ -1,12 +1,17 @@
-import { worksData } from "@/lib/data";
+import { worksStaticData } from "@/lib/data";
 import Image from "next/image";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
-export default function Works() {
+export default function Works({ dict }: { dict: any }) {
+  const worksData = dict.work.items.map((item: any, index: number) => ({
+    ...item,
+    ...worksStaticData[index],
+  }));
+
   return (
     <div>
       <div className="space-y-16">
-        {worksData.map((project, index) => (
+        {worksData.map((project: any, index: number) => (
           <div
             key={index}
             className="group relative"
@@ -37,7 +42,7 @@ export default function Works() {
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-3">
-                  {project.tags.map((tag, tagIndex) => (
+                  {project.tags.map((tag: string, tagIndex: number) => (
                     <span
                       key={tagIndex}
                       className="text-xs text-gray-400 font-mono"

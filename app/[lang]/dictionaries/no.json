@@ -15,30 +15,71 @@
     "design": "God design handler ikke bare om utseende det handler om hvordan noe fungerer og føles. Hvert prosjekt er en mulighet til å løse ekte problemer og gjøre hverdagen litt enklere for noen.",
     "personal": "Når jeg ikke koder, sykler jeg, spiller fotball, tilbringer tid med kona og mine to barn, eller løper på stiene mellom Haraløkka og Østmarksetra.",
     "techTitle": "Teknologier jeg jobber med:",
-    "technologies": [
-      "JavaScript (ES6+)",
-      "TypeScript",
-      "React & Next.js",
-      "Vue.js & Vuetify",
-      "Tailwind CSS",
-      "Node.js & Express",
-      "PostgreSQL & MySQL",
-      "Git & GitHub"
-    ]
+    "technologies": {
+      "frontend": {
+        "title": "Frontend:",
+        "items": "React, Next.js, Vue.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, SCSS"
+      },
+      "backend": {
+        "title": "Backend:",
+        "items": "Node.js, TypeScript, PHP, REST APIer"
+      },
+      "databases": {
+        "title": "Databaser:",
+        "items": "PostgreSQL, SQL, MySQL"
+      },
+      "cloud": {
+        "title": "Sky",
+        "items": "GCP"
+      },
+      "integrations": {
+        "title": "Integrasjoner:",
+        "items": "RESTful, Stripe"
+      },
+      "tools": {
+        "title": "Verktøy & Arbeidsflyt:",
+        "items": "Git, Github, Figma, Monorepo-strukturer"
+      },
+      "architecture": {
+        "title": "Arkitektur & beste praksis:",
+        "items": "Komponentbiblioteker, Designsystemer, Responsiv design, Ytelsesoptimalisering"
+      },
+      "accessibility": {
+        "title": "Tilgjengelighet:",
+        "items": "Universell utforming, Skjermlesertesting"
+      },
+      "testing": {
+        "title": "Testing:",
+        "items": "Vitest"
+      }
+    }
   },
   "experience": {
     "items": [
       {
         "title": "Frontend-utvikler",
         "location": "Oblinor AS, Oslo, Norge",
-        "description": "Utvikler og vedlikeholder web- og mobilapplikasjoner ved hjelp av React (Next.js) og Vue.js. Fokusert på å bygge responsive brukergrensesnitt, integrere REST API-er, optimalisere ytelse og samarbeide med backend-team for å levere brukervennlige løsninger.",
+        "description": "Lager og vedlikeholder folkefinansieringsplattform som brukes av tusenvis av brukere over hele Norge. Det siste året har jeg utvidet mitt ansvarsområde til å omfatte fullstack-utvikling med både frontend og backend.",
         "date": "August 2020 - Nå"
       },
       {
         "title": "Webutvikler",
         "location": "Responsive Pixel Pvt. Ltd., Kathmandu, Nepal",
-        "description": "Designet, kodet og vedlikeholdt nettsteder med sterk funksjonalitet og tiltalende design. Sikret kompatibilitet på tvers av enheter og tilgjengelighet for alle brukere.",
-        "date": "Juli 2014 - Juli 2016"
+        "description": "Designet og utviklet responsive nettsider for ulike kunder med fokus på brukervennlighet og tilgjengelighet.",
+        "date": "Jul 2014 - Aug 2015"
+      },
+           
+      {
+        "title": "Webutvikler",
+        "location": "Ligon Tech Pvt. Ltd., Kathmandu, Nepal",
+        "description": "Utviklet og vedlikeholdt nettsider for kunder med fokus på rettidig levering og kvalitetskode.",
+        "date": "Des 2013 - Juni 2014"
+      },
+       {
+        "title": "Trainee",
+        "location": "Access Keys Pvt. Ltd. Kathmandu, Nepal",
+        "description": "Fullførte webutviklingspraksis med fokus på full-stack grunnleggende prinsipper.",
+        "date": "Juli 2013 - Nov 2013"
       }
     ]
   },

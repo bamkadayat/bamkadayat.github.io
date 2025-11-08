@@ -16,14 +16,18 @@ export default function About({ dict }: { dict: any }) {
           {dict.about.techTitle}
         </h3>
 
-        <ul className="grid grid-cols-2 gap-3 text-sm text-gray-400">
-          {dict.about.technologies.map((tech: string) => (
-            <li key={tech} className="flex items-center gap-2">
-              <span className="text-[#FFA324]">▹</span>
-              {tech}
-            </li>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {Object.entries(dict.about.technologies).map(([key, category]: [string, any]) => (
+            <div key={key}>
+              <h4 className="text-base font-semibold text-white mb-2">
+                {category.title}
+              </h4>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                {category.items}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

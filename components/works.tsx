@@ -23,9 +23,9 @@ export default function Works({ dict }: { dict: any }) {
                 <Image
                   src={project.imageUrl}
                   width={600}
-                  height={400}
+                  height={500}
                   alt={project.title}
-                  className="w-full h-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-autogroup-hover:opacity-100 transition-opacity duration-300"
                   loading="lazy"
                 />
               </div>
@@ -33,7 +33,7 @@ export default function Works({ dict }: { dict: any }) {
               {/* Content */}
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-white group-hover:text-[#FFA324] transition-colors">
-                  {project.title}
+                  {project.title} 
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">

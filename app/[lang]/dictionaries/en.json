@@ -85,24 +85,24 @@
   "work": {
     "items": [
       {
-        "title": "Vyver Group",
-        "description": "Marketing website for a home & garden company."
+        "title": "Oblinor user portal",
+        "description": "Investment tracking and document management portal."
       },
       {
         "title": "Oblinor Platform",
         "description": "Crowdlending platform for real estate investments."
       },
       {
+        "title": "Reiseklar",
+        "description": "Reiseklar helps commuters in Norway plan routes with real-time data from Entur and weather updates from Yr."
+      },
+      {
         "title": "BB Utvikling",
         "description": "Property development company website."
       },
       {
-        "title": "Admin Dashboard",
-        "description": "Dashboard for platform management and analytics."
-      },
-      {
-        "title": "Customer Portal",
-        "description": "Investment tracking and document management portal."
+        "title": "Vyver Group",
+        "description": "Marketing website for a home & garden company."
       }
     ]
   },

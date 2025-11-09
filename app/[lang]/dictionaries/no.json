@@ -86,24 +86,24 @@
   "work": {
     "items": [
       {
-        "title": "Vyver Group",
-        "description": "Markedsføringsnettsted for et hage- og hjemmeselskap."
+        "title": "Oblinor user portal",
+        "description": "Portal for investeringssporing og dokumenthåndtering."
       },
       {
         "title": "Oblinor Platform",
         "description": "Crowdlending-plattform for eiendomsinvesteringer."
       },
       {
+        "title": "Reiseklar",
+        "description": "Reiseklar hjelper pendlere i Norge med å planlegge ruter ved hjelp av sanntidsdata fra Entur og værmeldinger fra Yr."
+      },
+      {
         "title": "BB Utvikling",
         "description": "Nettsted for eiendomsutviklingsselskap."
       },
       {
-        "title": "Admin Dashboard",
-        "description": "Dashboard for plattformadministrasjon og analyser."
-      },
-      {
-        "title": "Customer Portal",
-        "description": "Portal for investeringssporing og dokumenthåndtering."
+        "title": "Vyver Group",
+        "description": "Markedsføringsnettsted for et hage- og hjemmeselskap."
       }
     ]
   },

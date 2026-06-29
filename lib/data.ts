@@ -13,6 +13,18 @@ export const currentCompany = {
 // Static data (tags, urls, images) that don't need translation
 export const worksStaticData = [
   {
+    tags: ["Next.js", "TypeScript", "React", "Node.js", "PostgreSQL", "Prisma", "Tailwind"],
+    imageUrl: "/images/oblinor-equity-hub.gif",
+    liveUrl: "https://oblinorequityhub.com",
+    githubUrl: undefined,
+  },
+  {
+    tags: ["Vue 3", "Vuex", "Pinia", "Vuetify"],
+    imageUrl: "/images/oblinor-admin-portal.gif",
+    liveUrl: "https://kontor.oblinor.no",
+    githubUrl: undefined,
+  },
+  {
     tags: ["Vue.js", "TypeScript", "Vuetify", "Vuex", "PHP", "JavaScript", "MySQL", "Figma"],
     imageUrl: "/images/customer-portal.gif",
     liveUrl: undefined,

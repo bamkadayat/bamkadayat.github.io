@@ -85,6 +85,14 @@
   "work": {
     "items": [
       {
+        "title": "Oblinor Equity Hub",
+        "description": "Equity management platform for tracking shareholdings, investments, and ownership."
+      },
+      {
+        "title": "Oblinor Admin Portal",
+        "description": "Internal admin system for managing Oblinor's operations and data."
+      },
+      {
         "title": "Oblinor user portal",
         "description": "Investment tracking and document management portal."
       },

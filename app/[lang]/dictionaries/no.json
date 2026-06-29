@@ -86,6 +86,14 @@
   "work": {
     "items": [
       {
+        "title": "Oblinor Equity Hub",
+        "description": "Plattform for egenkapitalhåndtering for sporing av aksjeposter, investeringer og eierskap."
+      },
+      {
+        "title": "Oblinor Admin Portal",
+        "description": "Internt administrasjonssystem for håndtering av Oblinors drift og data."
+      },
+      {
         "title": "Oblinor user portal",
         "description": "Portal for investeringssporing og dokumenthåndtering."
       },

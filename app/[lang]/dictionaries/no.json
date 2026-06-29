@@ -14,43 +14,43 @@
     "currentWork": "For tiden jobber jeg som fullstack-utvikler i Oblinor, hvor jeg leder frontend-utviklingen og bidrar til å bygge skalerbare webløsninger med TypeScript, React, Next.js og Vue.js.",
     "design": "God design handler ikke bare om utseende det handler om hvordan noe fungerer og føles. Hvert prosjekt er en mulighet til å løse ekte problemer og gjøre hverdagen litt enklere for noen.",
     "personal": "Når jeg ikke koder, sykler jeg, spiller fotball, tilbringer tid med kona og mine to barn, eller løper på stiene mellom Haraløkka og Østmarksetra.",
-    "techTitle": "Teknologier jeg jobber med:",
+    "techTitle": "Tekniske ferdigheter",
     "technologies": {
       "frontend": {
         "title": "Frontend:",
         "items": "React, Next.js, Vue.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, SCSS"
       },
       "backend": {
-        "title": "Backend:",
-        "items": "Node.js, TypeScript, PHP, REST APIer"
+        "title": "Backend & APIer:",
+        "items": "REST APIer, Node.js, Prisma, PHP"
       },
       "databases": {
         "title": "Databaser:",
-        "items": "PostgreSQL, SQL, MySQL"
-      },
-      "cloud": {
-        "title": "Sky",
-        "items": "GCP"
+        "items": "PostgreSQL, MySQL"
       },
       "integrations": {
         "title": "Integrasjoner:",
-        "items": "RESTful, Stripe"
-      },
-      "tools": {
-        "title": "Verktøy & Arbeidsflyt:",
-        "items": "Git, Github, Figma, Monorepo-strukturer"
-      },
-      "architecture": {
-        "title": "Arkitektur & beste praksis:",
-        "items": "Komponentbiblioteker, Designsystemer, Responsiv design, Ytelsesoptimalisering"
-      },
-      "accessibility": {
-        "title": "Tilgjengelighet:",
-        "items": "Universell utforming, Skjermlesertesting"
+        "items": "Stripe"
       },
       "testing": {
         "title": "Testing:",
-        "items": "Vitest"
+        "items": "Vitest, React Testing Library"
+      },
+      "architecture": {
+        "title": "Frontend-arkitektur:",
+        "items": "Gjenbrukbare komponenter, designsystemer, komponentbiblioteker, responsiv design, tilstandshåndtering, ytelsesoptimalisering"
+      },
+      "cloud": {
+        "title": "Sky:",
+        "items": "Google Cloud Platform (GCP)"
+      },
+      "tools": {
+        "title": "Verktøy & Arbeidsflyt:",
+        "items": "Git, Github, GitLab, Bitbucket, Figma, Monorepo-strukturer"
+      },
+      "accessibility": {
+        "title": "Tilgjengelighet & Universell utforming:",
+        "items": "Universell utforming, Skjermlesertesting"
       }
     }
   },

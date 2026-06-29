@@ -14,43 +14,43 @@
     "currentWork": "Currently, I'm working as a full-stack developer at Oblinor, where I lead frontend development and contribute to building scalable web solutions using TypeScript, React, Next.js, and Vue.js.",
     "design": "Good design isn't just appearance it's how something works and feels. Every project is a chance to solve real problems and make someone's day a bit easier.",
     "personal": "When I'm not coding, I'm cycling, playing football, hanging out with my wife and two kids, or running the trails between Haraløkka and Østmarksetra.",
-    "techTitle": "Technologies I work with:",
+    "techTitle": "Technical Skills",
     "technologies": {
       "frontend": {
         "title": "Frontend:",
         "items": "React, Next.js, Vue.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, SCSS"
       },
       "backend": {
-        "title": "Backend:",
-        "items": "Node.js, TypeScript, PHP, WordPress, REST APIs"
+        "title": "Backend & APIs:",
+        "items": "REST APIs, Node.js, Prisma, PHP"
       },
       "databases": {
         "title": "Databases:",
-        "items": "PostgreSQL, SQL, MySQL"
-      },
-      "cloud": {
-        "title": "Cloud",
-        "items": "GCP"
+        "items": "PostgreSQL, MySQL"
       },
       "integrations": {
         "title": "Integrations:",
-        "items": "RESTful, Stripe"
-      },
-      "tools": {
-        "title": "Verktøy & Workflow:",
-        "items": "Git, Github, Figma, Monorepo structures"
-      },
-      "architecture": {
-        "title": "Architecture & Best Practices:",
-        "items": "Component libraries, Design systems, Responsive design, Performance optimization"
-      },
-      "accessibility": {
-        "title": "Accessibility:",
-        "items": "Universal Design, Screen reader testing"
+        "items": "Stripe"
       },
       "testing": {
         "title": "Testing:",
-        "items": "Vitest"
+        "items": "Vitest, React Testing Library"
+      },
+      "architecture": {
+        "title": "Frontend Architecture:",
+        "items": "Reusable components, design systems, component libraries, responsive design, state management, performance optimization"
+      },
+      "cloud": {
+        "title": "Cloud:",
+        "items": "Google Cloud Platform (GCP)"
+      },
+      "tools": {
+        "title": "Tools & Workflow:",
+        "items": "Git, Github, GitLab, Bitbucket, Figma, Monorepo structures"
+      },
+      "accessibility": {
+        "title": "Accessibility & Universal Design:",
+        "items": "Universal Design, Screen reader testing"
       }
     }
   },
